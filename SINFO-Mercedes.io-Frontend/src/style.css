@@ -1,0 +1,101 @@
+body{
+  background-color: #000;
+  font-family: Helvetica;
+  color: #ffff;
+  padding-top: 5%;
+}
+
+.arrow{
+  background-color: #000;
+  cursor: pointer;
+  text-align: center;
+  width: 20px;
+  height: 20px;
+  border: none;
+}
+
+#arrowPrev{
+  position: relative;
+  display: inline-block;
+  top: -200px;
+}
+
+#arrowNext{
+  position: relative;
+  display: inline-block;
+  top: -200px;
+}
+
+#slide1{
+  display:inline-block;
+}
+
+#slide2{
+  display: inline-block;
+}
+
+#slide3{
+  display:inline-block;
+}
+
+.prd {
+  display: inline-block;
+  width: 232px;
+  height: 232px;
+  margin: 15px;
+}
+
+.prd0{
+  display: block;
+}
+
+.header{
+  font-size: 16px;
+  line-height: 20px;
+  margin: 5px;
+  text-align: left;
+}
+
+.description{
+  font-size: 12px;
+  line-height: 16px;
+  margin: 5px;
+  text-align: left;
+}
+
+.attributes{
+  margin: 5px;
+  margin-top: 10px;
+  font-size: 18px;
+  text-align: left;
+}
+
+.button{
+  background-color: #00adef;
+  cursor: pointer;
+  text-align: center;
+  width: 27px;
+  height: 27px;
+  border: none;
+}
+
+.quantity{
+  font-size: 16px;
+  color: #000;
+  background-color: #ffff;
+  width: 27px;
+  text-align: center;
+  padding-top: 3px;
+}
+
+.price{
+  float: right;
+}
+
+#total{
+  margin-top: 45px;
+  margin-right: 286px;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: right;
+}
