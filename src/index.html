@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Miguel Baptista -->
+
+<head>
+  <meta charset="UTF-8">
+  <title>Mercedes-Benz.io Frontend Developer Challenge for SINFO</title>
+  <link rel='stylesheet' href='style.css'>
+</head>
+
+<body style="text-align: center" onload="sliderProducts();">
+<script src='main.js'> </script>
+
+<div id="arrowPrev">
+  <button class="arrow" aria-label="Previous Products" onclick="prevProducts();">
+    <img src='./images/prev.svg'>
+  </button>
+</div>
+
+<div id="slide1">
+
+<div class='prd'>
+  <div class='prd0'>
+    <img src='./images/img4.png'>
+  </div>
+  <h1 class='header'>
+    Product 1 - Glass
+  </h1>
+  <p class='description'>
+    Stuff1 and more stuff. Stuff and more stuff. Stuff and more stuff.
+    Stuff and more stuff. Stuff and more stuff.
+  </p>
+  <div class='attributes'>
+    <button class="button" onclick="subtoQuantity(0);" aria-label="Less One Quantity">
+      <img src='./images/minus.svg'>
+    </button>
+    <input class="quantity" id="quantity1" onchange="applyQuantity(this.value , 0)" value="0">
+    <button class="button" onclick="addtoQuantity(0);" aria-label="Plus One Quantity">
+      <img src='./images/plus.svg'>
+    </button>
+    <span class='price'> <script> document.write(prices[0].toFixed(2)) </script>€ </span>
+  </div>
+</div>
+
+<div class='prd'>
+  <div class='prd0'>
+    <img src='./images/img4.png'>
+  </div>
+  <h1 class='header'>
+    Product 2 - Steering Wheel
+  </h1>
+  <p class='description'>
+    Stuff2 and more stuff. Stuff and more stuff. Stuff and more stuff.
+    Stuff and more stuff. Stuff and more stuff.
+  </p>
+  <div class='attributes'>
+    <button class="button" onclick="subtoQuantity(1);" aria-label="Less One Quantity">
+      <img src='./images/minus.svg'>
+    </button>
+    <input class="quantity" id="quantity2" onchange="applyQuantity(this.value , 1)" value="0">
+    <button class="button" onclick="addtoQuantity(1);" aria-label="Plus One Quantity">
+      <img src='./images/plus.svg'>
+    </button>
+    <span class='price'> <script> document.write(prices[1].toFixed(2)) </script>€ </span>
+  </div>
+</div>
+
+<div class='prd'>
+  <div class='prd0'>
+    <img src='./images/img4.png'>
+  </div>
+  <h1 class='header'>
+    Product 3 - Breaks
+  </h1>
+  <p class='description'>
+    Stuff3 and more stuff. Stuff and more stuff. Stuff and more stuff.
+    Stuff and more stuff. Stuff and more stuff.
+  </p>
+  <div class='attributes'>
+    <button class="button" onclick="subtoQuantity(2);" aria-label="Less One Quantity">
+      <img src='./images/minus.svg'>
+    </button>
+    <input class="quantity" id="quantity3" onchange="applyQuantity(this.value , 2)" value="0">
+    <button class="button" onclick="addtoQuantity(2);" aria-label="Plus One Quantity">
+      <img src='./images/plus.svg'>
+    </button>
+    <span class='price'> <script> document.write(prices[2].toFixed(2)) </script>€ </span>
+  </div>
+</div>
+
+</div>
+
+
+<div id="slide2">
+
+<div class='prd'>
+  <div class='prd0'>
+    <img src='./images/img4.png'>
+  </div>
+  <h1 class='header'>
+    Product 4 - Chair
+  </h1>
+  <p class='description'>
+    Stuff4 and more stuff. Stuff and more stuff. Stuff and more stuff.
+    Stuff and more stuff. Stuff and more stuff.
+  </p>
+  <div class='attributes'>
+    <button class="button" onclick="subtoQuantity(3);" aria-label="Less One Quantity">
+      <img src='./images/minus.svg'>
+    </button>
+    <input class="quantity" id="quantity4" onchange="applyQuantity(this.value , 3)" value="0">
+    <button class="button" onclick="addtoQuantity(3);" aria-label="Plus One Quantity">
+      <img src='./images/plus.svg'>
+    </button>
+    <span class='price'> <script> document.write(prices[3].toFixed(2)) </script>€ </span>
+  </div>
+</div>
+
+<div class='prd'>
+  <div class='prd0'>
+    <img src='./images/img4.png'>
+  </div>
+  <h1 class='header'>
+    Product 5 - Oil
+  </h1>
+  <p class='description'>
+    Stuff5 and more stuff. Stuff and more stuff. Stuff and more stuff.
+    Stuff and more stuff. Stuff and more stuff.
+  </p>
+  <div class='attributes'>
+    <button class="button" onclick="subtoQuantity(4);" aria-label="Less One Quantity">
+      <img src='./images/minus.svg'>
+    </button>
+    <input class="quantity" id="quantity5" onchange="applyQuantity(this.value , 4)" value="0">
+    <button class="button" onclick="addtoQuantity(4);" aria-label="Plus One Quantity">
+      <img src='./images/plus.svg'>
+    </button>
+    <span class='price'> <script> document.write(prices[4].toFixed(2)) </script>€ </span>
+  </div>
+</div>
+
+<div class='prd'>
+  <div class='prd0'>
+    <img src='./images/img4.png'>
+  </div>
+  <h1 class='header'>
+    Product 6 - Tire
+  </h1>
+  <p class='description'>
+    Stuff6 and more stuff. Stuff and more stuff. Stuff and more stuff.
+    Stuff and more stuff. Stuff and more stuff.
+  </p>
+  <div class='attributes'>
+    <button class="button" onclick="subtoQuantity(5);" aria-label="Less One Quantity">
+      <img src='./images/minus.svg'>
+    </button>
+    <input class="quantity" id="quantity6" onchange="applyQuantity(this.value , 5)" value="0">
+    <button class="button" onclick="addtoQuantity(5);" aria-label="Plus One Quantity">
+      <img src='./images/plus.svg'>
+    </button>
+    <span class='price'> <script> document.write(prices[5].toFixed(2)) </script>€ </span>
+  </div>
+</div>
+
+</div>
+
+
+<div id="slide3">
+
+<div class='prd'>
+  <div class='prd0'>
+    <img src='./images/img4.png'>
+  </div>
+  <h1 class='header'>
+    Product 6 - Tire
+  </h1>
+  <p class='description'>
+    Stuff6 and more stuff. Stuff and more stuff. Stuff and more stuff.
+    Stuff and more stuff. Stuff and more stuff.
+  </p>
+  <div class='attributes'>
+    <button class="button" onclick="subtoQuantity(5);" aria-label="Less One Quantity">
+      <img src='./images/minus.svg'>
+    </button>
+    <input class="quantity" id="quantity6" onchange="applyQuantity(this.value , 5)" value="0">
+    <button class="button" onclick="addtoQuantity(5);" aria-label="Plus One Quantity">
+      <img src='./images/plus.svg'>
+    </button>
+    <span class='price'> <script> document.write(prices[5].toFixed(2)) </script>€ </span>
+  </div>
+</div>
+
+<div class='prd'>
+  <div class='prd0'>
+    <img src='./images/img4.png'>
+  </div>
+  <h1 class='header'>
+    Product 7 - Sound Sistem
+  </h1>
+  <p class='description'>
+    Stuff7 and more stuff. Stuff and more stuff. Stuff and more stuff.
+    Stuff and more stuff. Stuff and more stuff.
+  </p>
+  <div class='attributes'>
+    <button class="button" onclick="subtoQuantity(6);" aria-label="Less One Quantity">
+      <img src='./images/minus.svg'>
+    </button>
+    <input class="quantity" id="quantity7" onchange="applyQuantity(this.value , 6)" value="0">
+    <button class="button" onclick="addtoQuantity(6);" aria-label="Plus One Quantity">
+      <img src='./images/plus.svg'>
+    </button>
+    <span class='price'> <script> document.write(prices[6].toFixed(2)) </script>€ </span>
+  </div>
+</div>
+
+<div class='prd'>
+  <div class='prd0'>
+    <img src='./images/img4.png'>
+  </div>
+  <h1 class='header'>
+    Product 8 - Sticker
+  </h1>
+  <p class='description'>
+    Stuff8 and more stuff. Stuff and more stuff. Stuff and more stuff.
+    Stuff and more stuff. Stuff and more stuff.
+  </p>
+  <div class='attributes'>
+    <button class="button" onclick="subtoQuantity(7);" aria-label="Less One Quantity">
+      <img src='./images/minus.svg'>
+    </button>
+    <input class="quantity" id="quantity8" onchange="applyQuantity(this.value , 7)" value="0">
+    <button class="button" onclick="addtoQuantity(7);" aria-label="Plus One Quantity">
+      <img src='./images/plus.svg'>
+    </button>
+    <span class='price'> <script> document.write(prices[7].toFixed(2)) </script>€ </span>
+  </div>
+</div>
+
+</div>
+
+<div id="arrowNext">
+  <button class="arrow" aria-label="Next Products" onclick="nextProducts();">
+    <img src='./images/next.svg'>
+  </button>
+</div>
+
+<div id='total'>
+  Total:&ensp;<b> <span id='totalMoney'>0.00</span>€ </b>
+</div>
+
+</body>
+
+</html>
